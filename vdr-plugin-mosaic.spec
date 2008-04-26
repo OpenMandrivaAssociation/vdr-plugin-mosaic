@@ -1,8 +1,8 @@
 
 %define plugin	mosaic
 %define name	vdr-plugin-%plugin
-%define version	0.0.3
-%define rel	3
+%define version	0.1.0
+%define rel	1
 
 Summary:	VDR plugin: Browse mosaic channel
 Name:		%name
@@ -12,9 +12,8 @@ Group:		Video
 License:	GPL+
 URL:		http://vdrwiki.free.fr/vdr/mosaic/
 Source:		http://vdrwiki.free.fr/vdr/mosaic/files/vdr-%plugin-%version.tgz
-Patch0:		mosaic-wrong-endif.patch
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	vdr-devel >= 1.4.1-6
+BuildRequires:	vdr-devel >= 1.6.0
 Requires:	vdr-abi = %vdr_abi
 
 %description
@@ -24,7 +23,7 @@ information and plays the audio of the selected channel.
 
 %prep
 %setup -q -n %plugin-%version
-%patch0 -p1
+%vdr_plugin_prep
 
 %build
 %vdr_plugin_build
