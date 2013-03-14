@@ -2,7 +2,7 @@
 %define plugin	mosaic
 %define name	vdr-plugin-%plugin
 %define version	0.1.0
-%define rel	5
+%define rel	6
 
 Summary:	VDR plugin: Browse mosaic channel
 Name:		%name
@@ -32,12 +32,6 @@ information and plays the audio of the selected channel.
 
 install -d -m755 %{buildroot}%{vdr_plugin_cfgdir}
 install -m644 files/*.conf %{buildroot}%{vdr_plugin_cfgdir}
-
-%post
-%vdr_plugin_post %plugin
-
-%postun
-%vdr_plugin_postun %plugin
 
 %files -f %plugin.vdr
 %defattr(-,root,root)
