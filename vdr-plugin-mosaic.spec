@@ -3,7 +3,7 @@
 Summary:	VDR plugin: Browse mosaic channel
 Name:		vdr-plugin-%plugin
 Version:	0.1.0
-Release:	7
+Release:	8
 Group:		Video
 License:	GPL+
 URL:		http://vdrwiki.free.fr/vdr/mosaic/
