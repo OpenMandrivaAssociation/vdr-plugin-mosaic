@@ -6,7 +6,7 @@ Version:	0.1.0
 Release:	8
 Group:		Video
 License:	GPL+
-URL:		http://vdrwiki.free.fr/vdr/mosaic/
+URL:		https://vdrwiki.free.fr/vdr/mosaic/
 Source:		http://vdrwiki.free.fr/vdr/mosaic/files/vdr-%plugin-%{version}.tgz
 BuildRequires:	vdr-devel >= 1.6.0
 Requires:	vdr-abi = %vdr_abi
